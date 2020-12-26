@@ -1,2 +1,2 @@
 ## Camping Trip App
-Vanilla JavaScript Practice; to learn/better understanding of form validation + populating objects from JSON!
+Vanilla JavaScript Practice; Dive deeper into form validation + populating objects from JSON!
