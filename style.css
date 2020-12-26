@@ -1,0 +1,333 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav {
+  background-color: #cf0058;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hamburger {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+  list-style-type: none;
+  padding: 0 !important;
+}
+
+.dropdown-menu li {
+  padding: 10px 0;
+}
+
+.dropdown-menu li:nth-of-type(2) {
+  border-top: 1px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
+  /* padding: 8px 0; */
+}
+
+.dropdown-item {
+  color: white;
+  text-decoration: none;
+  text-align: right !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: white !important;
+  color: #cf0058 !important;
+}
+
+.text-white {
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+@media (max-width: 574px) {
+  .text-white {
+    font-size: 25px;
+  }
+}
+
+.hero {
+  background-image: url("./assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 40px;
+}
+
+main {
+  padding: 100px 0 !important;
+}
+
+.text-danger {
+  color: red;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.camp-heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.error-message {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
+
+.form-item {
+  width: calc(100% / 3);
+}
+
+@media (max-width: 1000px) {
+  .form-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-item:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
+.form-item:nth-child(2) {
+  margin: 0 15px;
+}
+
+@media (max-width: 1000px) {
+  .form-item:nth-child(2) {
+    margin: 0;
+  }
+}
+
+label {
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  border: 2px solid gray;
+  font-style: italic;
+  width: 100%;
+  height: 40px;
+  padding-left: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    margin-top: 0px;
+  }
+}
+
+select {
+  margin-top: 10px !important;
+}
+
+@media (max-width: 1000px) {
+  select {
+    margin-top: 0 !important;
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 40px 0 !important;
+  padding: 0;
+}
+
+.fieldset-container {
+  display: flex;
+}
+
+.fieldset-item {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .fieldset-container {
+    flex-direction: column;
+  }
+
+  .fieldset-item:nth-of-type(2) {
+    margin: 10px 0;
+  }
+}
+
+legend {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.camping-group {
+  margin: 0 70px 0 10px;
+}
+
+.submit {
+  outline: none;
+  border: none;
+  background-color: #cf0058;
+  padding: 10px 14px;
+  border: 1px solid #cf0058;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #cf0058;
+}
+
+.camping-groups {
+  background-color: #eeeeee;
+  padding: 60px 0;
+  border-top: 2px solid #9b9b9b;
+}
+
+.camping-groups h2 {
+  color: black;
+  font-size: 30px;
+  margin: 0 0 30px 0;
+}
+
+.camping-group-flex {
+  display: flex;
+}
+
+.group {
+  background-color: white;
+  width: 32.3%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.69);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.69);
+}
+
+@media (max-width: 1000px) {
+  .group {
+    width: 100%;
+    padding: 25px 30px;
+  }
+}
+
+.group-flex-container {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.group p {
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.group ul {
+  border-top: 2px solid #9b9b9b;
+  margin: 30px 0;
+}
+
+.group ul li:first-of-type {
+  margin-top: 30px;
+}
+
+.camping-group-flex>.group:nth-child(2) {
+  margin: 0 1.5%;
+}
+
+@media (max-width: 1000px) {
+  .camping-group-flex {
+    flex-direction: column;
+  }
+
+  .camping-group-flex>.group:nth-child(2) {
+    margin: 20px 0;
+  }
+}
+
+.camping-groups ul {
+  padding-left: 0;
+}
+
+.camping-groups ul li {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  margin-left: 30px;
+}
+
+.text-container h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #cf0058;
+  padding: 20px 30px;
+}
+
+footer p {
+  color: white;
+  text-align: right;
+  margin-bottom: 0;
+}
